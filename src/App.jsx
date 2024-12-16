@@ -4,10 +4,12 @@ import Map from './pages/Map'
 import List from './pages/List'
 import Header from './Components/Header'
 
+
 const App = () => {
   return (
     <BrowserRouter>
       <Header />
+
       <Routes>
         <Route path='/' element={<Map />} />
         <Route path='/list' element={<List />} />
