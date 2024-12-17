@@ -51,9 +51,6 @@ button:focus-visible {
 }
 
 
-header {}
-
-
 /* Links */
 
 .buttons {
@@ -84,5 +81,18 @@ header {}
 }
 
 .leaflet-container {
-  height: calc(100vh-58px);
+  height: calc(100vh - 58px);
+}
+
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  gap: 10;
+
+  span {
+    text-align: center;
+    font-weight: 700;
+    font-size: 15;
+  }
 }
