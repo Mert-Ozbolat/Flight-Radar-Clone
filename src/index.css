@@ -122,19 +122,6 @@ button:focus-visible {
     margin-left: 10px;
     margin-top: 60px;
     overflow-y: auto;
-
-    .close-wrapper {
-      background: #535bf2;
-      display: flex;
-      justify-content: end;
-      border-radius: 8px;
-
-      button {
-        background: none;
-        font-size: 17px;
-        transition: all 0.4s;
-      }
-    }
   }
 }
 
@@ -163,5 +150,38 @@ button:focus-visible {
       margin-top: 0;
       border-radius: 0;
     }
+  }
+}
+
+.close-wrapper {
+  background: #535bf2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 0 5px;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    h3 {
+      margin: 0;
+      font-size: 19px;
+    }
+
+    span {
+      background: rgba(148, 147, 147, 0.7);
+      font-size: 13px;
+      padding: 3px 6px;
+      border-radius: 6px;
+    }
+  }
+
+  button {
+    background: none;
+    font-size: 17px;
+    transition: all 0.4s;
   }
 }

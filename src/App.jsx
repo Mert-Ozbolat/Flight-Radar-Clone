@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux'
 import { getFlights } from './redux/actions/index'
 import Modal from './Components/Modal'
 
+
 const App = () => {
   const [detailId, setDetailId] = useState(null)
   const dispatch = useDispatch();
