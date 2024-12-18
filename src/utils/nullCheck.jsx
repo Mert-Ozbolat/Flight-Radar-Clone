@@ -1,9 +1,11 @@
-import { MdOutlineQuestionMark } from "react-icons/md"
+import { MdOutlineQuestionMark } from "react-icons/md";
 
+const nullCheck = (value, color) => {
+    return (
+        value || (
+            <MdOutlineQuestionMark style={{ color: color }} className="question" />
+        )
+    );
+};
 
-const nullCheck = (value) => {
-    return value || <MdOutlineQuestionMark className="question" />
-}
-
-
-export default nullCheck
+export default nullCheck;

@@ -246,3 +246,28 @@ button:focus-visible {
   display: grid;
   place-items: center;
 }
+
+.time {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 20px;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3px;
+
+    &:nth-child(1),
+    &:nth-child(3) {
+      border-right: 1px solid;
+      padding-right: 10px;
+      padding-top: 10px;
+    }
+
+    &:nth-child(2),
+    &:nth-child(4) {
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+  }
+}
