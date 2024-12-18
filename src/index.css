@@ -105,6 +105,7 @@ button:focus-visible {
   position: fixed;
   z-index: 999999;
   height: 100vh;
+  width: 100%;
   top: 0;
   left: 0;
   display: flex;
@@ -112,7 +113,7 @@ button:focus-visible {
 
   .modal-inner {
     background: black;
-    width: 300px;
+    width: 350px;
     height: 90%;
     border-radius: 15px;
     display: flex;
@@ -183,5 +184,53 @@ button:focus-visible {
     background: none;
     font-size: 17px;
     transition: all 0.4s;
+  }
+}
+
+
+.slider {
+  height: 200px;
+
+  img {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.airport {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &:nth-child(1) {
+      border-right: 1px solid;
+    }
+
+    span {
+      font-size: 14px;
+      color: rgb(133, 132, 132);
+    }
+  }
+
+  .icon {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
