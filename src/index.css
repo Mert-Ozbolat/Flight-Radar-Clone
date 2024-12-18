@@ -234,3 +234,15 @@ button:focus-visible {
     }
   }
 }
+
+.question {
+  color: white;
+  font-size: 22px;
+}
+
+.warning {
+  color: #4f4f4f;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
