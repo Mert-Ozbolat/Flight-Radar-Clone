@@ -6,6 +6,8 @@ import Gallery from "./Gallery.jsx";
 import Airport from "./Airport.jsx";
 import Time from "./Time.jsx";
 import Aircraft from "./Aircraft.jsx";
+import Loader from "../Loader.jsx";
+import Error from "../Error.jsx";
 
 const Modal = ({ id, close }) => {
     const { isLoading, error, info } = useSelector((store) => store.detail);
@@ -16,13 +18,13 @@ const Modal = ({ id, close }) => {
     return (
         <div className="modal-outer">
             <div className="modal-inner">
+                <Head info={info} close={close} />
                 {isLoading
-                    ? "Loader"
+                    ? <Loader />
                     : error
-                        ? "Error"
+                        ? <Error info={error} />
                         : info && (
                             <div className="info-wrapper">
-                                <Head info={info} close={close} />
                                 <div className="details">
                                     <Aircraft data={info.aircraft.images} />
                                     <Gallery data={info.aircraft.images} />

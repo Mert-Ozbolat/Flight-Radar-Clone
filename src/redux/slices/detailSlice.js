@@ -12,7 +12,11 @@ const initialState = {
 const detailSlice = createSlice({
     name: "detail",
     initialState,
-    reducers: {},
+    reducers: {
+        clearRoute: () => {
+            state.route = []
+        }
+    },
     extraReducers: (builder) => {
         builder.addCase(getDetail.pending, (state) => {
             state.isLoading = true
@@ -31,3 +35,4 @@ const detailSlice = createSlice({
 })
 
 export default detailSlice.reducer
+export const { clearRoute } = detailSlice.actions
