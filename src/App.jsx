@@ -22,7 +22,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path='/' element={<Map setDetailId={setDetailId} />} />
-        <Route path='/list' element={<List />} />
+        <Route path='/list' element={<List setDetailId={setDetailId} />} />
       </Routes>
 
       {
