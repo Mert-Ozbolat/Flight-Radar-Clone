@@ -13,4 +13,4 @@ This web application, developed using Redux Toolkit and RESTful API integration,
 - bootstrap
 
 ##Preview:
-!()[flight-radar.gif]
+![](flight-radar.gif)
