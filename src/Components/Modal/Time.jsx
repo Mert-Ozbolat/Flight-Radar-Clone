@@ -3,28 +3,30 @@ import c from '../../utils/nullCheck'
 import t from '../../utils/formatDate'
 
 
-
 const Time = ({ data }) => {
     return (
-        <div className='time'>
+        <div className="time">
             <div>
-                <span>Planlanan</span>
-                <span>{c(t(data.schedueld?.departure))}</span>
+                <span>SCHEDULE</span>
+                <span>{c(t(data.scheduled?.departure))}</span>
             </div>
+
             <div>
-                <span>Planlanan</span>
-                <span>{c(t(data.schedueld?.arrival))}</span>
+                <span>SCHEDULE</span>
+                <span>{c(t(data.scheduled?.arrival))}</span>
             </div>
+
             <div>
-                <span>Gerçek.</span>
+                <span>ACTUAL</span>
                 <span>{c(t(data.real?.departure))}</span>
             </div>
+
             <div>
-                <span>Tahmini</span>
+                <span>ESTIMATED</span>
                 <span>{c(t(data.estimated?.arrival))}</span>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Time
+export default Time;
