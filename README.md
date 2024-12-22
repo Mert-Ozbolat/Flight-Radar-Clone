@@ -12,5 +12,5 @@ This web application, developed using Redux Toolkit and RESTful API integration,
 - react-paginate
 - bootstrap
 
-##Preview:
+## Preview:
 ![](flight-radar.gif)
